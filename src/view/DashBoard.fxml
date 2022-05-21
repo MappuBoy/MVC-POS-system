@@ -18,7 +18,7 @@
    <children>
       <AnchorPane prefHeight="63.0" prefWidth="927.0" style="-fx-border-color: #1c521c;">
          <children>
-            <Label alignment="CENTER" layoutX="347.0" layoutY="2.0" prefHeight="60.0" prefWidth="302.0" text="JANAKA GROSURY  PLC" textFill="#1c521c">
+            <Label alignment="CENTER" layoutX="205.0" layoutY="2.0" prefHeight="60.0" prefWidth="302.0" text="JANAKA GROSURY  PLC" textFill="#1c521c">
                <font>
                   <Font name="System Bold" size="24.0" />
                </font>
@@ -33,7 +33,7 @@
                   <Font name="System Bold" size="15.0" />
                </font>
             </Label>
-            <ImageView fitHeight="51.0" fitWidth="78.0" layoutX="278.0" layoutY="11.0" pickOnBounds="true">
+            <ImageView fitHeight="51.0" fitWidth="78.0" layoutX="494.0" pickOnBounds="true">
                <image>
                   <Image url="@../assets/download(2).png" />
                </image>
@@ -80,17 +80,17 @@
             </Label>
             <AnchorPane layoutX="13.0" layoutY="46.0" prefHeight="429.0" prefWidth="260.0" style="-fx-background-color: rgb(223, 228, 234); -fx-background-radius: 30;">
                <children>
-                  <JFXTextField fx:id="txtCustmerId" focusColor="#1c521c" labelFloat="true" layoutX="23.0" layoutY="14.0" onAction="#searchCustomerByIdOnAction" prefHeight="31.0" prefWidth="131.0" promptText="Customer Id" unFocusColor="#1c521c">
+                  <JFXTextField fx:id="txtCustmerId" focusColor="#1c521c" labelFloat="true" layoutX="23.0" layoutY="14.0" onAction="#searchCustomer" prefHeight="31.0" prefWidth="131.0" promptText="Customer Id" unFocusColor="#1c521c">
                      <padding>
                         <Insets bottom="10.0" />
                      </padding>
                   </JFXTextField>
-                  <JFXTextField fx:id="txtCustmerName" focusColor="#1c521c" labelFloat="true" layoutX="23.0" layoutY="74.0" onAction="#searchCustomerbyName" prefHeight="31.0" prefWidth="131.0" promptText="Name" unFocusColor="#1c521c">
+                  <JFXTextField fx:id="txtCustmerName" focusColor="#1c521c" labelFloat="true" layoutX="23.0" layoutY="126.0" prefHeight="31.0" prefWidth="131.0" promptText="Name" unFocusColor="#1c521c">
                      <padding>
                         <Insets bottom="10.0" />
                      </padding>
                   </JFXTextField>
-                  <JFXTextField fx:id="txtCustmerTitle" focusColor="#1c521c" labelFloat="true" layoutX="23.0" layoutY="133.0" prefHeight="31.0" prefWidth="131.0" promptText="Title" unFocusColor="#1c521c">
+                  <JFXTextField fx:id="txtCustmerTitle" focusColor="#1c521c" labelFloat="true" layoutX="23.0" layoutY="69.0" prefHeight="31.0" prefWidth="131.0" promptText="Title" unFocusColor="#1c521c">
                      <padding>
                         <Insets bottom="10.0" />
                      </padding>
@@ -115,9 +115,9 @@
                         <Insets bottom="10.0" />
                      </padding>
                   </JFXTextField>
-                  <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="173.0" layoutY="18.0" onAction="#addCustomerOnAction" prefHeight="51.0" prefWidth="47.0" style="-fx-border-color: green;" textFill="WHITE">
+                  <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="178.0" layoutY="30.0" onAction="#addCustomerOnAction" prefHeight="51.0" prefWidth="59.0" style="-fx-border-color: green;" text="add" textFill="#0f8000">
                      <font>
-                        <Font size="1.0" />
+                        <Font size="16.0" />
                      </font>
                      <cursor>
                         <Cursor fx:constant="HAND" />
@@ -126,11 +126,6 @@
                         <DropShadow />
                      </effect>
                   </JFXButton>
-                  <ImageView fx:id="addCustomerButton" fitHeight="25.0" fitWidth="31.0" layoutX="184.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../assets/plus.png" />
-                     </image>
-                  </ImageView>
                </children>
             </AnchorPane>
          </children>
@@ -144,7 +139,7 @@
                   <JFXTextField fx:id="txtQtyOnHand" labelFloat="true" layoutX="38.0" layoutY="194.0" promptText="Qty on hand" />
                   <JFXTextField fx:id="txtUnitPrice" labelFloat="true" layoutX="200.0" layoutY="83.0" promptText="unit price" />
                   <JFXTextField fx:id="txtPackSize" labelFloat="true" layoutX="38.0" layoutY="145.0" promptText="Pack size" />
-                  <JFXButton layoutX="346.0" layoutY="21.0" onAction="#addOrderDetailOnAction" prefHeight="39.0" prefWidth="68.0" style="-fx-background-color: rgb(112, 161, 255); -fx-background-radius: 100;" text="ADD" />
+                  <JFXButton layoutX="335.0" layoutY="147.0" onAction="#addOrderDetailOnAction" prefHeight="39.0" prefWidth="68.0" style="-fx-background-color: rgb(112, 161, 255); -fx-background-radius: 100;" text="ADD" />
                   <JFXButton layoutX="225.0" layoutY="147.0" onAction="#removeOrderDetailOnAction" prefHeight="39.0" prefWidth="68.0" style="-fx-background-color: rgb(112, 161, 255); -fx-background-radius: 100;" text="Remove" textFill="RED" />
                   <JFXTextField fx:id="txtId" labelFloat="true" layoutX="38.0" layoutY="28.0" onAction="#SearchItembyIdOnAction" promptText="Code" />
                   <JFXTextField fx:id="txtItemType" labelFloat="true" layoutX="38.0" layoutY="243.0" promptText="Item Type" />

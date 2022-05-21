@@ -30,7 +30,7 @@ public class AddCustomerFormController {
 
     public void addICustomerOnAction(ActionEvent actionEvent) throws SQLException, ClassNotFoundException {
 
-        Customer customer = new Customer(txtTitle.getText(),txtTitle.getText(),txtName.getText(),txtAddress.getText(),
+        Customer customer = new Customer(txtId.getId(), txtTitle.getText(),txtName.getText(),txtAddress.getText(),
                         txtCity.getText(), txtProvince.getText(),txtPostalCode.getText());
         Connection connection= DBConnection.getInstance().getConnection();
         PreparedStatement preparedStatement= connection.
